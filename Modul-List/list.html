@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Modul</title>
+    <style>
+        body {
+            font-family: Poppins;
+            background-color: #fdf8e4;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+       header {
+            background-color: #fff4d1;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c49000;
+        }
+
+        .container {
+            /* margin-top: 150px; */
+margin: auto;
+            width: 90%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .container h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .module {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .module.locked {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .module a {
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #007bff;
+        }
+
+        .module.locked a {
+            background-color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SEJI</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/Modul-List/list.html">Modul Ajar</a>
+            <a href="../Profile/profile.html">Profile</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Modul Ajar</h1>
+        <div class="module">
+            <span>Modul 1: Jalur Perdagangan dan Masuknya Islam</span>
+            <a href="/Modul-1/modul1.html">Buka</a>
+        </div>
+        <div class="module" id="modul2">
+            <span>Modul 2: Pusat Penyebaran Islam dan Budaya Lokal</span>
+            <a href="/Modul-2/modul2.html">Buka</a>
+        </div>
+        <div class="module locked" id="modul3">
+            <span>Modul 3: Jejak dan Pengaruh Islam di Nusantara</span>
+            <a href="#">Buka</a>
+        </div>
+    </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const modul2 = document.getElementById('modul2');
+        const modul2Link = modul2.querySelector('a');
+
+        const modul3 = document.getElementById('modul3');
+        const modul3Link = modul3.querySelector('a');
+
+        if (localStorage.getItem('modul2Complete') === 'true') {
+            modul3.classList.remove('locked');
+            modul3Link.setAttribute('href', '/Modul-3/modul3.html');
+        }
+    });
+</script>
+</body>
+</html>

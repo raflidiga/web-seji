@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEJI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>SEJI</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/Modul-List/list.html">Modul Ajar</a>
+            <a href="/Profile/profile.html">Profile</a>
+            <button id="auth-button">Masuk</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Selamat Datang di <b>SEJI</b>!</h2>
+        <p>Seji adalah Platform Pembelajar Sejarah Penyebaran Islam di Indonesia Melalui Jalur Perdagangan.</p>
+
+        <div class="box">
+            <h3>Tujuan <b>SEJI</b></h3>
+            <p> 
+                Memahami penyebaran Islam di Indonesia melalui jalur perdagangan.
+                Melestarikan sejarah Islam sebagai bagian budaya Nusantara.
+                Menginspirasi generasi muda untuk menghargai sejarah dan identitas bangsa.
+                Menyediakan pembelajaran interaktif untuk memahami warisan budaya Indonesia.
+            </p>
+        </div>
+
+        <div class="box">
+            <h3>Modul Ajar</h3>
+            <ul class="module-list">
+                <li>Modul 1: Jalur Perdagangan dan Masuknya Islam</li>
+                <li>Modul 2: Pusat Penyebaran Islam dan Budaya Lokal</li>
+                <li>Modul 3: Jejak dan Pengaruh Islam di Nusantara</li>
+            </ul>
+            <div class="button">
+               <a href="Modul-List/list.html">Mulai Belajar</a>
+            </div>
+        </div>
+    </div>
+
+ 
+    <footer>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p>Copyright@Seji2025</p>
+    </footer>
+<script>
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+const authButton = document.getElementById('auth-button');
+
+if (isLoggedIn) {
+  authButton.textContent = 'Keluar';
+  authButton.addEventListener('click', () => {
+    localStorage.setItem('isLoggedIn', 'false'); // Logout pengguna
+    window.location.href = ''; // Kembali ke halaman login
+  });z
+} else {
+  authButton.textContent = 'Masuk';
+  authButton.addEventListener('click', () => {
+    window.location.href = 'Login/Masuk.html'; // Arahkan ke halaman login
+  });
+}
+</script>
+</body>
+</html>

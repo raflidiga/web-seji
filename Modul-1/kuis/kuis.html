@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Modul 1</title>
+    <style>
+        body {
+            font-family: Poppins;
+            background-color: #fdf8e4;
+            margin: 0;
+            padding: 0;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+         header {
+            background-color: #fff4d1;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c49000;
+        }
+
+        .login-button {
+            background-color: #c49000;
+            color: #fff;
+            padding: 5px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .login-button:hover {
+            background-color: #a07500;
+        }
+        
+        .container {
+            margin: auto;
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .container h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            font-weight: bold;
+        }
+        .options label {
+            display: block;
+            margin: 5px 0;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #f28b2b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #e27b21;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .action-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        .action-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SEJI</h1>
+       
+    </header>
+
+    <div class="container">
+        <h1>Kuis Modul 1</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>Soal 1: Apa jalur perdagangan utama yang menghubungkan Tiongkok, India, Timur Tengah, dan Eropa melalui Nusantara?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> a. Jalur Sutra Darat</label>
+                    <label><input type="radio" name="q1" value="b"> b. Jalur Rempah</label>
+                    <label><input type="radio" name="q1" value="c"> c. Jalur Sutra Laut</label>
+                    <label><input type="radio" name="q1" value="d"> d. Jalur Trans-Sumatra</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Soal 2: Siapakah yang dikenal sebagai tokoh penyebar Islam di Pulau Jawa melalui pendekatan budaya?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> a. Sultan Agung</label>
+                    <label><input type="radio" name="q2" value="b"> b. Gajah Mada</label>
+                    <label><input type="radio" name="q2" value="c"> c. Wali Songo</label>
+                    <label><input type="radio" name="q2" value="d"> d. Sultan Hasanuddin</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Soal 3: Kerajaan Islam pertama di Nusantara yang menjadi pusat penyebaran Islam adalah?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> a. Majapahit</label>
+                    <label><input type="radio" name="q3" value="b"> b. Sriwijaya</label>
+                    <label><input type="radio" name="q3" value="c"> c. Samudera Pasai</label>
+                    <label><input type="radio" name="q3" value="d"> d. Mataram</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Soal 4: Apa faktor utama yang mempercepat penyebaran Islam melalui jalur perdagangan di Nusantara?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> a. Penjajahan oleh bangsa Eropa</label>
+                    <label><input type="radio" name="q4" value="b"> b. Interaksi pedagang dengan penduduk lokal</label>
+                    <label><input type="radio" name="q4" value="c"> c. Perang antara kerajaan</label>
+                    <label><input type="radio" name="q4" value="d"> d. Penyebaran melalui jalur darat</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Soal 5: Salah satu dampak masuknya Islam dalam bidang budaya di Nusantara adalah?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> a. Hilangnya budaya lokal</label>
+                    <label><input type="radio" name="q5" value="b"> b. Penggunaan aksara Arab Melayu</label>
+                    <label><input type="radio" name="q5" value="c"> c. Larangan upacara adat</label>
+                    <label><input type="radio" name="q5" value="d"> d. Adanya kasta dalam masyarakat</label>
+                </div>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="checkAnswers()">Selesai</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+<script>
+    function checkAnswers() {
+        const correctAnswers = {
+            q1: 'c',
+            q2: 'c',
+            q3: 'c',
+            q4: 'b',
+            q5: 'b'
+        };
+
+        let score = 0;
+        const form = document.getElementById('quiz-form');
+        const formData = new FormData(form);
+
+        for (const [question, correctAnswer] of Object.entries(correctAnswers)) {
+            if (formData.get(question) === correctAnswer) {
+                score++;
+            }
+        }
+
+        const resultDiv = document.getElementById('result');
+        const totalQuestions = Object.keys(correctAnswers).length;
+
+        if (score === totalQuestions) {
+            // Menyimpan status penyelesaian Modul 1 di localStorage
+            localStorage.setItem('modul1Complete', 'true');
+            // Membuka akses Modul 2 dengan menyimpan status di localStorage
+            localStorage.setItem('modul2Unlocked', 'true');
+
+           
+            resultDiv.innerHTML = `Skor Anda: ${score} dari ${totalQuestions} <br><a href="../modul1.html" class="action-btn">Kembali</a>`;
+        } else {
+            resultDiv.innerHTML = `Skor Anda: ${score} dari ${totalQuestions} <br><a href="kuis.html" class="action-btn">Ulangi</a>`;
+        }
+    }
+</script>
+
+
+
+</body>
+</html>

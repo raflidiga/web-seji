@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar - SEJI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SEJI</h1>
+      <div class="nav-buttons">
+        <a href="masuk.html">Masuk</a>
+        <a href="daftar.html" class="active">Daftar</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="form active">
+        <h2>Daftar</h2>
+        <form id="register-form">
+          <input id="register-username" type="text" placeholder="Username" required>
+          <input id="register-password" type="password" placeholder="Sandi" required>
+          <input id="register-confirm-password" type="password" placeholder="Masukan Ulang Sandi" required>
+          <button type="submit">Daftar</button>
+        </form>
+        <p>Sudah punya akun? <a href="masuk.html">Masuk</a></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+  <script>
+    // Tambahkan event listener ke form daftar
+    document.getElementById('register-form').addEventListener('submit', validateRegisterForm);
+  </script>
+</body>
+</html>

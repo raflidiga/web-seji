@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Modul 3</title>
+    <style>
+        body {
+            font-family: Poppins;
+            background-color: #fdf8e4;
+            margin: 0;
+            padding: 0;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+         header {
+            background-color: #fff4d1;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c49000;
+        }
+
+        .login-button {
+            background-color: #c49000;
+            color: #fff;
+            padding: 5px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .login-button:hover {
+            background-color: #a07500;
+        }
+        
+        .container {
+            margin: auto;
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .container h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            font-weight: bold;
+        }
+        .options label {
+            display: block;
+            margin: 5px 0;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #f28b2b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #e27b21;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .action-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        .action-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SEJI</h1>
+    </header>
+
+    <div class="container">
+        <h1>Kuis Modul 3</h1>
+        <form id="quiz-form">
+            <p>Soal 1: Apa salah satu cara Islam menyebar di Nusantara pada masa awal kedatangannya?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> a. Melalui penaklukan militer</label>
+                <label><input type="radio" name="q1" value="b"> b. Melalui jalur perdagangan</label>
+                <label><input type="radio" name="q1" value="c"> c. Melalui penyebaran agama Hindu</label>
+                <label><input type="radio" name="q1" value="d"> d. Melalui kolonialisasi Eropa</label>
+            </div>
+
+            <p>Soal 2: Di mana salah satu pusat pendidikan Islam yang berkembang pesat di Nusantara pada masa penyebaran Islam?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> a. Universitas Gajah Mada</label>
+                <label><input type="radio" name="q2" value="b"> b. Pesantren-pesantren di Aceh</label>
+                <label><input type="radio" name="q2" value="c"> c. Akademi Malaka</label>
+                <label><input type="radio" name="q2" value="d"> d. Madrasah di Bali</label>
+            </div>
+
+            <p>Soal 3: Apa pengaruh Islam terhadap seni dan budaya di Nusantara?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> a. Pengembangan seni patung dengan gaya Hindu</label>
+                <label><input type="radio" name="q3" value="b"> b. Meningkatnya kesenian batik</label>
+                <label><input type="radio" name="q3" value="c"> c. Perkembangan seni arsitektur masjid dengan menara</label>
+                <label><input type="radio" name="q3" value="d"> d. Menghilangkan seni tradisional lokal</label>
+            </div>
+
+            <p>Soal 4: Bagaimana Islam mempengaruhi bidang ekonomi di Nusantara?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> a. Dengan memperkenalkan sistem moneter Eropa</label>
+                <label><input type="radio" name="q4" value="b"> b. Dengan membawa sistem perdagangan bebas</label>
+                <label><input type="radio" name="q4" value="c"> c. Melalui pengenalan zakat dan larangan riba</label>
+                <label><input type="radio" name="q4" value="d"> d. Dengan mendirikan pasar internasional</label>
+            </div>
+
+            <p>Soal 5: Apa yang menjadi kontribusi Islam dalam bidang ilmu pengetahuan di Nusantara?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> a. Menyebarkan ilmu-ilmu kedokteran Barat</label>
+                <label><input type="radio" name="q5" value="b"> b. Memperkenalkan sistem pendidikan umum</label>
+                <label><input type="radio" name="q5" value="c"> c. Mengembangkan ilmu astronomi, matematika, dan filosofi</label>
+                <label><input type="radio" name="q5" value="d"> d. Mendorong tradisi lisan sebagai metode belajar</label>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="checkAnswers()">Selesai</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+<script>
+    function checkAnswers() {
+        const correctAnswers = {
+            q1: 'b',
+            q2: 'b',
+            q3: 'c',
+            q4: 'c',
+            q5: 'c'
+        };
+
+        let score = 0;
+        const form = document.getElementById('quiz-form');
+        const formData = new FormData(form);
+
+        for (const [question, correctAnswer] of Object.entries(correctAnswers)) {
+            if (formData.get(question) === correctAnswer) {
+                score++;
+            }
+        }
+
+        const resultDiv = document.getElementById('result');
+        const totalQuestions = Object.keys(correctAnswers).length;
+
+        resultDiv.innerHTML = `Skor Anda: ${score} dari ${totalQuestions}`;
+
+        if (score === totalQuestions) {
+            localStorage.setItem('modul3Complete', 'true');
+            resultDiv.innerHTML += '<br><a href="../../Modul-List/list.html" class="action-btn" onclick="checkAllModules()">Kembali</a>';
+        } else {
+            resultDiv.innerHTML += '<br><a href="kuis.html" class="action-btn">Ulangi</a>';
+        }
+    }
+
+    function checkAllModules() {
+        if (localStorage.getItem('modul3Complete') === 'true') {
+            alert('Selamat! Anda telah menyelesaikan semua modul.');
+        }
+    }
+</script>
+</body>
+
+</body>
+</html>

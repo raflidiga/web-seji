@@ -1,0 +1,103 @@
+body {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6e3;
+    height: 100vh;
+}
+
+ header {
+            background-color: #fff4d1;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c49000;
+        }
+
+        .login-button {
+            background-color: #c49000;
+            color: #fff;
+            padding: 5px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .login-button:hover {
+            background-color: #a07500;
+        }
+
+.module-container {
+    background: #f5deb3;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 2rem auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.video-placeholder {
+    background: #ddd;
+
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+ .quiz-note{
+    color: #FE5252;
+ }
+.quiz-button, .login-button {
+    background: #ff0000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+}
+
+.quiz-button:hover, .login-button:hover {
+    background: hsl(0, 70%, 73%);
+    color: #333;
+}
+footer {
+  
+    text-align: center;
+    padding: 1rem;
+    background: #f5e1b7;
+}
+
+.close-button {
+    border: none;
+    background: #f76c6c;
+    padding: 0.5rem;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background: #d9534f;
+}
